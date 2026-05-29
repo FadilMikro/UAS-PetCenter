@@ -1,12 +1,38 @@
+/* === TOPBAR === */
 .topbar {
     background-color: var(--navy-blue);
-    color: var(--white);
+    color: #CBD5E1;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 8px 8%;
-    font-size: 0.85rem;
+    font-size: 0.82rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
+.topbar-left,
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.topbar span i {
+    color: var(--accent);
+    margin-right: 6px;
+}
+
+.topbar-left span:not(:last-child)::after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background: rgba(255,255,255,0.2);
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+/* === NAVBAR === */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -36,12 +62,19 @@
     font-weight: 500;
     font-size: 0.95rem;
     transition: var(--transition);
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
 }
 
-.nav-links li a:hover, .nav-links li a.active { color: var(--accent); }
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
 
-/* Dropdown */
+/* === DROPDOWN === */
 .dropdown { position: relative; }
+
 .dropdown-menu {
     position: absolute;
     top: 150%;
@@ -56,39 +89,77 @@
     transition: var(--transition);
     padding: 10px 0;
 }
+
 .dropdown:hover .dropdown-menu {
-    opacity: 1; visibility: visible; transform: translateY(0); top: 100%;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    top: 100%;
 }
+
 .dropdown-menu li a {
-    display: block; padding: 10px 20px; font-weight: 400;
+    display: block;
+    padding: 10px 20px;
+    font-weight: 400;
+    border-bottom: none; /* override border dari nav-links li a */
 }
+
 .dropdown-menu li a:hover { background-color: var(--gray-bg); }
 
-/* Icons & Hamburger */
+/* Animasi arrow dropdown */
+.dropdown > a i.fa-chevron-down {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+.dropdown:hover > a i.fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+/* === ICONS & HAMBURGER === */
 .nav-icons { display: flex; align-items: center; gap: 20px; }
+
 .cart-icon { position: relative; font-size: 1.2rem; }
+
 .cart-badge {
-    position: absolute; top: -8px; right: -10px;
-    background-color: var(--accent); color: var(--white);
-    font-size: 0.65rem; font-weight: 700;
-    width: 16px; height: 16px; border-radius: 50%;
-    display: flex; justify-content: center; align-items: center;
+    position: absolute;
+    top: -8px; right: -10px;
+    background-color: var(--accent);
+    color: var(--white);
+    font-size: 0.65rem;
+    font-weight: 700;
+    width: 16px; height: 16px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-toggle { display: none; }
 .hamburger { display: none; font-size: 1.5rem; cursor: pointer; }
 
-/* Mobile Navbar */
+/* === MOBILE === */
 @media (max-width: 991px) {
+    .topbar { flex-direction: column; gap: 6px; text-align: center; }
+    .topbar-left span:not(:last-child)::after { display: none; }
+
     .nav-links {
-        position: absolute; top: 100%; left: 0; width: 100%;
+        position: absolute;
+        top: 100%; left: 0;
+        width: 100%;
         background-color: var(--white);
-        flex-direction: column; gap: 0;
+        flex-direction: column;
+        gap: 0;
         box-shadow: 0 10px 20px rgba(0,0,0,0.05);
         display: none;
     }
-    .nav-links li a { padding: 20px; border-bottom: 1px solid #f1f1f1; display: block; text-align: center; }
+    .nav-links li a {
+        padding: 15px 20px;
+        border-bottom: 1px solid #f1f1f1;
+        display: block;
+        text-align: center;
+        border-bottom-color: #f1f1f1; /* override accent border */
+    }
     .nav-toggle:checked ~ .nav-links { display: flex; }
     .hamburger { display: block; }
-    .dropdown:hover .dropdown-menu { display: none; } /* Disable hover on mobile for now */
+    .dropdown:hover .dropdown-menu { display: none; }
 }
