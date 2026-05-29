@@ -1,0 +1,26 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+    color: var(--navy-blue);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.section-padding { padding: 80px 8%; }
+.bg-gray { background-color: var(--gray-bg); }
+.text-center { text-align: center; }
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--navy-blue);
+}

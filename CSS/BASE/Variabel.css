@@ -1,0 +1,9 @@
+:root {
+    --navy-blue: #0A192F;
+    --navy-light: #112240;
+    --white: #FFFFFF;
+    --gray-bg: #F8F9FA;
+    --gray-text: #64748B;
+    --accent: #38BDF8;
+    --transition: all 0.3s ease;
+}

@@ -1,0 +1,30 @@
+.btn-login {
+    border: 1px solid var(--navy-blue);
+    padding: 8px 24px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+.btn-login:hover { background-color: var(--navy-blue); color: var(--white); }
+
+.btn-primary {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    display: inline-block;
+    transition: var(--transition);
+}
+.btn-primary:hover { background-color: var(--navy-light); }
+
+.btn-secondary {
+    border: 2px solid var(--navy-blue);
+    color: var(--navy-blue);
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    display: inline-block;
+    transition: var(--transition);
+}
+.btn-secondary:hover { background-color: var(--gray-text); color: var(--white); border-color: var(--gray-text); }

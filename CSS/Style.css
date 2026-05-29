@@ -1,0 +1,24 @@
+/* =========================================
+   IMPORT MODUL CSS
+   Urutan sangat penting!
+========================================= */
+
+/* 1. BASE (Variabel & Pengaturan Dasar) */
+@import url('BASE/Variabel.css');
+@import url('BASE/Reset.css');
+@import url('BASE/Global.css');
+
+/* 2. COMPONENT (Bagian-bagian potongan UI) */
+@import url('COMPONENT/Navbar.css');
+@import url('COMPONENT/Button.css');
+@import url('COMPONENT/card.css');
+
+/* 3. PAGE (Tata letak spesifik halaman) */
+@import url('PAGE/Beranda.css');
+
+
+/* =========================================
+   STYLE TAMBAHAN (OPSIONAL)
+   Jika ada CSS yang tidak masuk ke modul mana pun,
+   kamu bisa menambahkannya di bawah ini.
+========================================= */

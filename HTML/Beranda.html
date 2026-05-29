@@ -1,11 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZOON | Premium Pet Center</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     
+    <link rel="stylesheet" href="../CSS/Style.css" />
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+            <span><i class="fas fa-phone-alt"></i> +62 895 - 3664 - 6043 5</span>
+            <span><i class="fas fa-clock"></i> Buka: Senin–Sabtu, 08.00–20.00</span>
+        </div>
+
+        <nav class="navbar">
+            <a href="Beranda.html" class="logo">
+                <i class="fas fa-paw"></i> ZOON<span>.</span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+            <ul class="nav-links">
+                <li><a href="Beranda.html" class="active">Beranda</a></li>
+                <li><a href="Shop.html">Shop</a></li>
+                <li class="dropdown">
+                    <a href="Layanan.html">Layanan <i class="fas fa-chevron-down" style="font-size: 12px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Klinik.html">Klinik Hewan</a></li>
+                        <li><a href="Grooming.html">Grooming</a></li>
+                        <li><a href="Layanan.html#hotel">Pet Hotel</a></li>
+                    </ul>
+                </li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Tentang.html">Tentang</a></li>
+                <li><a href="Kontak.html">Kontak</a></li>
+            </ul>
+
+            <div class="nav-icons">
+                <a href="Shop.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge">3</span>
+                </a>
+                <a href="Login.html" class="btn-login">Login</a>
+                <label for="nav-toggle" class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Standar Baru <br>Perawatan Hewan Peliharaan.</h1>
+                <p>Fasilitas modern, produk terjamin, dan layanan penuh kasih sayang untuk anjing dan kucing kesayangan Anda di satu tempat.</p>
+                <div class="hero-buttons">
+                    <a href="Shop.html" class="btn-primary">Belanja Sekarang</a>
+                    <a href="Layanan.html" class="btn-secondary">Lihat Layanan</a>
+                </div>
+            </div>
+            <div class="hero-icon-large">
+                <i class="fas fa-dog"></i>
+            </div>
+        </section>
+
+        <section class="categories section-padding">
+            <h2 class="section-title">Kategori Pilihan</h2>
+            <div class="cat-grid-3">
+                <div class="cat-card">
+                    <i class="fas fa-dog cat-icon"></i>
+                    <h3>Anjing</h3>
+                </div>
+                <div class="cat-card">
+                    <i class="fas fa-cat cat-icon"></i>
+                    <h3>Kucing</h3>
+                </div>
+                <div class="cat-card">
+                    <i class="fas fa-dove cat-icon"></i>
+                    <h3>Burung</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section-padding bg-gray">
+            <h2 class="section-title text-center">Layanan Kami</h2>
+            <div class="svc-grid">
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fas fa-cut"></i></div>
+                    <h4>Grooming</h4>
+                    <p>Perawatan bulu profesional.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fas fa-stethoscope"></i></div>
+                    <h4>Klinik Hewan</h4>
+                    <p>Pengobatan oleh dokter ahli.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fas fa-hotel"></i></div>
+                    <h4>Pet Hotel</h4>
+                    <p>Penitipan yang nyaman & aman.</p>
+                </div>
+                <div class="svc-card">
+                    <div class="svc-icon"><i class="fas fa-car-side"></i></div>
+                    <h4>Antar Jemput</h4>
+                    <p>Jemput langsung ke lokasi.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h2><i class="fas fa-paw"></i> ZOON<span>.</span></h2>
+                <p>Toko dan klinik hewan peliharaan terpercaya dengan layanan profesional.</p>
+            </div>
+            <div class="footer-links">
+                <h5>Perusahaan</h5>
+                <ul>
+                    <li><a href="Tentang.html">Tentang Kami</a></li>
+                    <li><a href="Klinik.html">Klinik Hewan</a></li>
+                    <li><a href="Grooming.html">Grooming</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h5>Kontak</h5>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Medan, Sumut</li>
+                    <li><i class="fas fa-phone"></i> +62 895 3664 6043 5</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ZOON Premium Pet Center. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
