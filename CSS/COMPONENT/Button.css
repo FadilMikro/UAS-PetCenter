@@ -28,3 +28,47 @@
     transition: var(--transition);
 }
 .btn-secondary:hover { background-color: var(--gray-text); color: var(--white); border-color: var(--gray-text); }
+
+/* ===== VIP CTA Button ===== */
+.btn-vip {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--accent);
+    color: var(--navy-blue);
+    padding: 15px 36px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: var(--transition);
+}
+.btn-vip:hover {
+    background: var(--white);
+    color: var(--navy-blue);
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px rgba(56, 189, 248, 0.45);
+}
+.btn-vip i { transition: transform 0.3s ease; }
+.btn-vip:hover i { transform: translateX(5px); }
+
+/* ===== Social Icon Button (Footer) ===== */
+.social-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94A3B8;
+    font-size: 0.88rem;
+    text-decoration: none;
+    transition: var(--transition);
+}
+.social-btn:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--navy-blue);
+    transform: translateY(-4px);
+}

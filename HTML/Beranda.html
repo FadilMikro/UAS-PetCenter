@@ -7,20 +7,14 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    
     <link rel="stylesheet" href="../CSS/Style.css" />
 </head>
 
 <body>
     <header>
         <div class="topbar">
-            <div class="topbar-left">
-                <span><i class="fas fa-map-marker-alt"></i> Medan, Sumatera Utara</span>
-                <span><i class="fas fa-phone-alt"></i> +62 895-3664-60435</span>
-            </div>
-            <div class="topbar-right">
-                <span><i class="fas fa-clock"></i> Senin–Sabtu, 08.00–20.00</span>
-            </div>
+            <span><i class="fas fa-phone-alt"></i> +62 895 - 3664 - 6043 5</span>
+            <span><i class="fas fa-clock"></i> Buka: Senin–Sabtu, 08.00–20.00</span>
         </div>
 
         <nav class="navbar">
@@ -60,22 +54,83 @@
     </header>
 
     <main>
+
+        <!-- ===== 1. HERO ===== -->
         <section class="hero">
             <div class="hero-content">
+                <p class="hero-tagline">
+                    <i class="fas fa-circle-dot"></i> Pure Trust, Pure Joy.
+                </p>
                 <h1>Standar Baru <br>Perawatan Hewan Peliharaan.</h1>
-                <p>Fasilitas modern, produk terjamin, dan layanan penuh kasih sayang untuk anjing dan kucing kesayangan Anda di satu tempat.</p>
+                <p class="hero-desc">
+                    Fasilitas modern, produk terjamin, dan layanan penuh kasih sayang
+                    untuk anjing dan kucing kesayangan Anda di satu tempat.
+                </p>
                 <div class="hero-buttons">
                     <a href="Shop.html" class="btn-primary">Belanja Sekarang</a>
                     <a href="Layanan.html" class="btn-secondary">Lihat Layanan</a>
                 </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Pelanggan Setia</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">24 Jam</span>
+                        <span class="stat-label">Klinik Aktif</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Layanan Premium</span>
+                    </div>
+                </div>
             </div>
-            <div class="hero-icon-large">
-                <i class="fas fa-dog"></i>
+            <div class="hero-visual">
+                <div class="hero-icon-large">
+                    <i class="fas fa-dog"></i>
+                </div>
+                <div class="hero-floating-badge">
+                    <i class="fas fa-shield-halved"></i>
+                    <span>Terpercaya & Profesional</span>
+                </div>
             </div>
         </section>
 
-        <section class="categories section-padding">
-            <h2 class="section-title">Kategori Pilihan</h2>
+        <!-- ===== 2. WHY ZOON ===== -->
+        <section class="why-section section-padding">
+            <h2 class="section-title text-center">Mengapa Memilih ZOON?</h2>
+            <p class="section-subtitle text-center">
+                Dibangun di atas nilai-nilai yang kami pegang teguh setiap harinya.
+            </p>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>Kepercayaan</h3>
+                    <p>Kami menjaga setiap amanah yang diberikan untuk memastikan rasa tenang penuh bagi pemilik hewan.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-heart-pulse"></i></div>
+                    <h3>Kasih Sayang</h3>
+                    <p>Setiap hewan diperlakukan dengan kelembutan dan empati, bukan sekadar pasien atau pelanggan.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-user-doctor"></i></div>
+                    <h3>Profesionalisme</h3>
+                    <p>Tim dokter, groomer, dan staf kami adalah lulusan terbaik dengan standar layanan tinggi dan konsisten.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Inovasi</h3>
+                    <p>Kami terus mengembangkan teknologi terbaru — dari rekam medis digital hingga laporan harian foto/video.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 3. CATEGORIES ===== -->
+        <section class="categories section-padding bg-gray">
+            <h2 class="section-title text-center">Kategori Pilihan</h2>
             <div class="cat-grid-3">
                 <div class="cat-card">
                     <i class="fas fa-dog cat-icon"></i>
@@ -92,38 +147,135 @@
             </div>
         </section>
 
-        <section class="services section-padding bg-gray">
+        <!-- ===== 4. SERVICES ===== -->
+        <section class="services section-padding">
             <h2 class="section-title text-center">Layanan Kami</h2>
             <div class="svc-grid">
                 <div class="svc-card">
                     <div class="svc-icon"><i class="fas fa-cut"></i></div>
-                    <h4>Grooming</h4>
-                    <p>Perawatan bulu profesional.</p>
+                    <h4>Grooming & Spa</h4>
+                    <p>Perawatan bulu profesional menggunakan sampo hypoallergenic untuk kenyamanan hewan Anda.</p>
                 </div>
-                <div class="svc-card">
+                <div class="svc-card svc-card--featured">
+                    <span class="svc-badge-24">24 JAM</span>
                     <div class="svc-icon"><i class="fas fa-stethoscope"></i></div>
                     <h4>Klinik Hewan</h4>
-                    <p>Pengobatan oleh dokter ahli.</p>
+                    <p>Pengobatan oleh dokter ahli, dilengkapi In-house Lab, X-Ray, dan ruang rawat inap terpisah.</p>
                 </div>
                 <div class="svc-card">
                     <div class="svc-icon"><i class="fas fa-hotel"></i></div>
                     <h4>Pet Hotel</h4>
-                    <p>Penitipan yang nyaman & aman.</p>
+                    <p>Kamar individu yang nyaman, bukan kandang besi. Dilengkapi laporan harian berupa foto & video.</p>
                 </div>
                 <div class="svc-card">
                     <div class="svc-icon"><i class="fas fa-car-side"></i></div>
                     <h4>Antar Jemput</h4>
-                    <p>Jemput langsung ke lokasi.</p>
+                    <p>Layanan jemput langsung ke lokasi Anda dengan penanganan yang aman dan profesional.</p>
                 </div>
             </div>
         </section>
+
+        <!-- ===== 5. ALUR RESERVASI ===== -->
+        <section class="journey-section section-padding bg-gray">
+            <h2 class="section-title text-center">Alur Reservasi Kami</h2>
+            <p class="section-subtitle text-center">
+                Proses mudah dan transparan — dari awal hingga hewan Anda kembali ke pelukan Anda.
+            </p>
+            <div class="journey-grid">
+
+                <div class="journey-step">
+                    <span class="step-num">01</span>
+                    <div class="step-icon"><i class="fas fa-calendar-check"></i></div>
+                    <h4>Reservasi</h4>
+                    <p>Pesan jadwal dengan mudah melalui website atau WhatsApp ZOON.</p>
+                </div>
+
+                <div class="journey-connector"><i class="fas fa-chevron-right"></i></div>
+
+                <div class="journey-step">
+                    <span class="step-num">02</span>
+                    <div class="step-icon"><i class="fas fa-clipboard-check"></i></div>
+                    <h4>Check-in</h4>
+                    <p>Disambut hangat oleh staf kami dan konfirmasi kebutuhan layanan Anda.</p>
+                </div>
+
+                <div class="journey-connector"><i class="fas fa-chevron-right"></i></div>
+
+                <div class="journey-step">
+                    <span class="step-num">03</span>
+                    <div class="step-icon"><i class="fas fa-notes-medical"></i></div>
+                    <h4>Assessment</h4>
+                    <p>Pengecekan kondisi fisik, riwayat medis, dan alergi hewan sebelum tindakan.</p>
+                </div>
+
+                <div class="journey-connector"><i class="fas fa-chevron-right"></i></div>
+
+                <div class="journey-step">
+                    <span class="step-num">04</span>
+                    <div class="step-icon"><i class="fas fa-paw"></i></div>
+                    <h4>Proses Layanan</h4>
+                    <p>Tindakan dijalankan sesuai standar premium oleh tenaga ahli bersertifikat.</p>
+                </div>
+
+                <div class="journey-connector"><i class="fas fa-chevron-right"></i></div>
+
+                <div class="journey-step">
+                    <span class="step-num">05</span>
+                    <div class="step-icon"><i class="fas fa-camera"></i></div>
+                    <h4>Quality Control</h4>
+                    <p>Update berkala berupa foto/video dikirimkan kepada Anda untuk ketenangan pikiran.</p>
+                </div>
+
+                <div class="journey-connector"><i class="fas fa-chevron-right"></i></div>
+
+                <div class="journey-step">
+                    <span class="step-num">06</span>
+                    <div class="step-icon"><i class="fas fa-handshake"></i></div>
+                    <h4>Check-out</h4>
+                    <p>Pengembalian hewan, penjelasan hasil perawatan lengkap, dan pembayaran.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== 6. VIP CTA ===== -->
+        <section class="vip-cta">
+            <div class="vip-decoration"><i class="fas fa-paw"></i></div>
+            <div class="vip-content">
+                <span class="vip-label"><i class="fas fa-crown"></i> VIP Membership</span>
+                <h2>Bergabunglah Bersama <br>Keluarga ZOON</h2>
+                <p>
+                    Dapatkan akses prioritas, promo eksklusif, dan layanan personal
+                    yang dirancang khusus untuk hewan kesayangan Anda.
+                </p>
+                <a href="Kontak.html" class="btn-vip">
+                    Daftar Sekarang <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
     </main>
 
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
         <div class="footer-grid">
             <div class="footer-brand">
                 <h2><i class="fas fa-paw"></i> ZOON<span>.</span></h2>
-                <p>Toko dan klinik hewan peliharaan terpercaya dengan layanan profesional.</p>
+                <p>
+                    Toko dan klinik hewan peliharaan terpercaya dengan layanan profesional.
+                    <br><em>Pure Trust, Pure Joy.</em>
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-btn" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-btn" aria-label="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="#" class="social-btn" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
             </div>
             <div class="footer-links">
                 <h5>Perusahaan</h5>
@@ -131,19 +283,23 @@
                     <li><a href="Tentang.html">Tentang Kami</a></li>
                     <li><a href="Klinik.html">Klinik Hewan</a></li>
                     <li><a href="Grooming.html">Grooming</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
                 <h5>Kontak</h5>
                 <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> Medan, Sumut</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Medan, Sumatera Utara</li>
                     <li><i class="fas fa-phone"></i> +62 895 3664 6043 5</li>
+                    <li><i class="fas fa-clock"></i> Senin–Sabtu, 08.00–20.00</li>
+                    <li><i class="fas fa-hospital"></i> Klinik: 24 Jam Nonstop</li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 ZOON Premium Pet Center. All rights reserved.</p>
+            <p>&copy; 2026 ZOON Premium Pet Center. All rights reserved. &nbsp;|&nbsp; <em>Pure Trust, Pure Joy.</em></p>
         </div>
     </footer>
+
 </body>
 </html>

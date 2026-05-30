@@ -24,3 +24,12 @@ ul {
     margin-bottom: 40px;
     color: var(--navy-blue);
 }
+
+/* Subtitle di bawah section-title — dipakai di beberapa halaman */
+.section-subtitle {
+    color: var(--gray-text);
+    font-size: 1rem;
+    margin-top: -28px;
+    margin-bottom: 50px;
+    line-height: 1.7;
+}

@@ -1,3 +1,4 @@
+/* ===== Category Card ===== */
 .cat-card {
     background: var(--white);
     border: 1px solid #E2E8F0;
@@ -14,6 +15,7 @@
 }
 .cat-icon { font-size: 3rem; color: var(--navy-blue); margin-bottom: 15px; }
 
+/* ===== Service Card ===== */
 .svc-card { text-align: center; padding: 20px; }
 .svc-icon {
     width: 80px; height: 80px;
@@ -27,3 +29,112 @@
 .svc-card:hover .svc-icon { background-color: var(--accent); color: var(--white); }
 .svc-card h4 { margin-bottom: 10px; font-size: 1.2rem; }
 .svc-card p { color: var(--gray-text); font-size: 0.9rem; }
+
+/* — Modifier: card dengan badge 24 JAM — */
+.svc-card--featured { position: relative; }
+
+.svc-badge-24 {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #EF4444;
+    color: #fff;
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    padding: 4px 14px;
+    border-radius: 30px;
+    white-space: nowrap;
+    animation: pulse-badge 2s ease-in-out infinite;
+}
+
+@keyframes pulse-badge {
+    0%, 100% { box-shadow: 0 4px 12px rgba(239, 68, 68, 0.38); }
+    50%       { box-shadow: 0 4px 22px rgba(239, 68, 68, 0.65); }
+}
+
+/* ===== Why ZOON Card ===== */
+.why-card {
+    background: var(--white);
+    border: 1px solid #E2E8F0;
+    border-radius: 18px;
+    padding: 36px 28px;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Garis bawah accent saat hover */
+.why-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; height: 3px;
+    background: var(--accent);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.35s ease;
+}
+.why-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 20px 40px rgba(56, 189, 248, 0.1);
+    border-color: rgba(56, 189, 248, 0.4);
+}
+.why-card:hover::after { transform: scaleX(1); }
+
+.why-icon {
+    width: 58px; height: 58px;
+    background: var(--gray-bg);
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem; color: var(--accent);
+    margin-bottom: 20px;
+    transition: var(--transition);
+}
+.why-card:hover .why-icon {
+    background: var(--accent);
+    color: var(--white);
+    transform: rotate(-5deg) scale(1.05);
+}
+.why-card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 10px; color: var(--navy-blue); }
+.why-card p  { color: var(--gray-text); font-size: 0.88rem; line-height: 1.75; }
+
+/* ===== Journey / Alur Step ===== */
+.journey-step {
+    flex: 1;
+    min-width: 0;
+    max-width: 160px;
+    text-align: center;
+    padding: 0 8px;
+}
+
+.step-num {
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 800;
+    color: var(--accent);
+    letter-spacing: 0.12em;
+    margin-bottom: 10px;
+}
+
+.step-icon {
+    width: 70px; height: 70px;
+    background: var(--white);
+    border: 2px solid #E2E8F0;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem; color: var(--navy-blue);
+    margin: 0 auto 16px;
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.journey-step:hover .step-icon {
+    background: var(--navy-blue);
+    color: var(--white);
+    border-color: var(--navy-blue);
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(10, 25, 47, 0.2);
+}
+.journey-step h4 { font-size: 0.88rem; font-weight: 700; margin-bottom: 8px; color: var(--navy-blue); }
+.journey-step p  { font-size: 0.76rem; color: var(--gray-text); line-height: 1.65; }
